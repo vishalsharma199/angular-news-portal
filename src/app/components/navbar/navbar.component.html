@@ -1,0 +1,14 @@
+<div class="sidenav">
+    <div  class="sidebar" [ngClass]="isShowHide==false? 'side1':'side2'" >
+        <ul>
+            <li><a [routerLink]="['news/dashboard']" [routerLinkActive]="'active'" >Top Headlines</a></li>
+            <li><a [routerLink]="['news/entertainment']" [routerLinkActive]="'active'" >Entertainment</a></li>
+        </ul>
+    </div>
+  
+    <div class="nav" id="nav"  >
+        <i class="pi pi-align-justify" (click)="isShow(isShowHide)" ></i>
+    </div>
+
+   
+</div>

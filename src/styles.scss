@@ -1,1 +1,173 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import "primeicons/primeicons.css";
+@import 'primeflex/primeflex.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+.header {
+    h1 {
+        border: 1px solid #fff;
+        font-size: 21px;
+        padding: 0 10px;
+    }
+}
+
+.grid {
+    margin: 0;
+
+    .flex-container {
+        display: flex;
+    }
+}
+
+.coreComponent {
+    color: #fff;
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.3rem 0.5rem;
+}
+
+.core {
+    background-color: #485460;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background:  linear-gradient(to right, #d3cce3, #e9e4f0);;
+    color: #fff;
+}
+
+.sidenav {
+    position: relative;
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            padding: 0 1rem;
+
+            a {
+                text-decoration: none;
+                
+            }
+        }
+        .active{
+            color: #fff;
+        }
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+.news-portal {
+    .grid {
+
+        .container {
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            margin: 20px 0;
+
+            .image {
+                img {
+                    width: 98%;
+                }
+            }
+
+            .author {
+                display: flex;
+                justify-content: space-between;
+
+                .sub-author {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    label {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .heading {
+                margin: 10px 0;
+
+                h2 {
+                    font-size: 18px;
+                }
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .source {
+                margin: 10px 0;
+            }
+        }
+
+        .flex-container {
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+
+            .author {
+                display: flex;
+                justify-content: space-between;
+
+                .sub-author {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    label {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .heading {
+                margin: 10px 0;
+
+                h2 {
+                    font-size: 18px;
+                }
+            }
+
+            .image {
+                img {
+                    width: 98%;
+                    height: 166px;
+                    margin: 10px;
+                    border: 1px solid black;
+                    border-radius: 6px;
+                }
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .source {
+                margin: 10px 0;
+            }
+        }
+    }
+}

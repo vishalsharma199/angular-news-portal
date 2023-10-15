@@ -1,0 +1,8 @@
+<div class="coreComponent" [ngClass]="isBlue==true?'core':'core2'" >
+    <app-header></app-header>
+    <app-navbar  (sendData)="collapsed($event)"></app-navbar>
+</div>
+<div [ngClass]="isCollapsed?'main-content':'collapsed-main-content'">
+    <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

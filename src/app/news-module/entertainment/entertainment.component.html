@@ -1,0 +1,65 @@
+<div class="news-portal">
+    <div class="grid">
+        <div class="col-4">
+            <div class="container" *ngFor="let articles of topHeading" >
+                <div class="col-12" [ngClass]="articles.urlToImage==null?'no-div':'div'">
+                    <div class="image">
+                        <img [src]="articles.urlToImage" alt="No Image">
+                    </div>
+                    <div class="content">
+                        <div class="author">
+                            <div class="sub-author">
+                                <label for="Author">Author : </label>
+                                <p>{{articles.author}}</p>
+                            </div>
+                            <div class="sub-author">
+                                <label for="date">Date : </label>
+                                <p>{{articles.publishedAt | date}}</p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <h2>{{articles.title}}</h2>
+                        </div>
+                        <div class="description">
+                            <p>{{articles.description}}</p>
+                        </div>
+                        <div class="source">
+                            <p>{{articles.source.name}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="flex-container" *ngFor="let articles of articles" [ngClass]="articles.urlToImage==null?'no-div':'div'" >
+                <div class="col-4">
+                    <div class="image">
+                        <img [src]="articles.urlToImage" alt="No Image">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="author">
+                        <div class="sub-author">
+                            <label for="Author">Author : </label>
+                            <p>{{articles.author}}</p>
+                        </div>
+                        <div class="sub-author">
+                            <label for="date">Date : </label>
+                            <p>{{articles.publishedAt | date}}</p>
+                        </div>
+                    </div>
+                    <div class="heading">
+                        <h2>{{articles.title}}</h2>
+                    </div>
+                    <div class="description">
+                        <p>{{articles.description}}</p>
+                    </div>
+                    <div class="source">
+                        <p>{{articles.source.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
